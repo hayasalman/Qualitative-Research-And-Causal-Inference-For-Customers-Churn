@@ -1,7 +1,7 @@
 # **Retrospective Observational Study for The Bank's Customers Churn**
 
 
-## **Introduction**
+## **Overview**
 
 ![lost](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/a0171be3-c30e-4b3f-b70a-aba1f1823434)
 
