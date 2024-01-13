@@ -19,10 +19,6 @@ We need to set up our local environment to programming using python , here :
    ```pip install numpy```
 
    ```pip install matplotlib```
-
-   ```pip install seaborn```
-
-  ```pip install tensorflow```
   
   ```pip install scikit-learn```
 
