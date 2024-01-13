@@ -1,16 +1,20 @@
-# **Retrospective Observational Study for The Bank's Cutomers Churn**
+# **Retrospective Observational Study for The Bank's Customers Churn**
 
 
 ## **Introduction**
 
-Churning is a common problem that we see in every industry, at the end of the day, companies always aim for the ultimate goal of increasing their revenue. Therefore, churn analysis plays a very important role in every organization. Churn analysis helps businesses to identify the reason behind customer churn and helps in reducing it through incentivized offers by reminding churned customers about the new updates, giving limited-time access to Premium services or Plans, by proactively engaging with them, notifying them about loyalty points expiration and so on.
+![lost](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/a0171be3-c30e-4b3f-b70a-aba1f1823434)
+
+
+Churning is a common problem that we see in every industry, at the end of the day, companies always aim for the ultimate goal of increasing their revenue. Therefore, churn analysis plays a very important role in every organization. Churn analysis helps businesses to identify the reason behind customer churn and helps in reducing it through incentivized offers by reminding churned customers about the new updates, giving limited-time access to Premium services or Plans, proactively engaging with them, notifying them about loyalty points expiration and so on.
 
 Bank customer churn, also known as customer attrition, refers to the phenomenon where customers stop doing business with a bank or switch to another bank. Churn is a critical metric for banks as it directly impacts their customer base and revenue. Customer churn can occur due to various reasons, such as dissatisfaction with services, better offers from competitors, changes in financial needs, or poor customer experiences.
 
 
 
-## **Exploaraty Data Anaysis (EDA) Insights**
+## **Exploaraty Data Analysis (EDA) Insights**
 
+![corr_matrix](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/b66e9489-f8cd-4a12-bd25-c56874eebf18)
 
 
 - Exited is perfectly positively correlated with the Complains.
@@ -228,14 +232,17 @@ Based on what we found from our earlier analysis we assume the causal relationsh
 
 **1. When the customers' activeness and age are modified by complaints**
 
+![DAGs_multi-treatment_0](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/75e1f7ea-c1f0-411c-9e5f-3706d1417077)
 
 
 **2. When the customers' balance and gender are confounded by complaints**
 
+![DAGs_multi-treatment_](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/8224aa4d-c143-46d5-acb8-824fcbdf631c)
 
 
 **3. When the customers' complaints linked to the customers' churn in causal path**
 
+![DAGs_Causal_](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/6a308b9d-4d1e-456e-b998-e4316a243ab3)
 
 
 ### **Causal Inference Assumptions**
@@ -292,26 +299,35 @@ Based on what we found from our earlier analysis we assume the causal relationsh
 
 **Rufution Hypotheses**
 
-- **H0** : There's no difference between the estimated effect and the new effect.
-- **Ha** : There's a difference between the estimated effect and the new effect.
+- **H0**: There's no difference between the estimated effect and the new effect.
+- **Ha**: There's a difference between the estimated effect and the new effect.
 
 **1. Random Common Causes**
 
 *Snapshoot for Customers' Complaints and Customers' Churn Model*
+
+![random_common_causes](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/ad4d5795-a039-4332-bf09-baa4407eb034)
 
 
 **2. Random (Placebo) Variable**
 
 *Snapshoot for Customers' Complaints and Customers' Churn Model*
 
+![Screenshot 2024-01-13 190534](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/d93e4365-ba75-46e1-94be-83c4dcd70746)
+
+
 **3. Data Subset Refuter**
 
 *Snapshoot for Customers' Complaints and Customers' Churn Model*
+
+![use_subset_data](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/7010908b-91f7-41a9-ac49-78b0a3d32a55)
 
 
 **4. Add Unobserved Common Causes**
 
 *Snapshoot for Customers' Complaints and Customers' Churn Model*
 
+![unobserved_common_cause](https://github.com/hayasalman/Qualitative-Research-Observational-Study-Causal-Inference/assets/71796909/bd58c949-7ecb-408f-acf7-feb85f3877e4)
 
-**Conclusion** : all the p-values for all models are larger than the significance level of 0.05 which means the estimated effect and the new effect are statistically not different.
+
+**Conclusion**: all the p-values for all models are larger than the significance level of 0.05 which means the estimated effect and the new effect are statistically not different.
