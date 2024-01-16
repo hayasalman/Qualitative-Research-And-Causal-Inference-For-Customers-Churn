@@ -264,7 +264,7 @@ Based on what we found from our earlier analysis we assume the causal relationsh
 - **Ignorability**: no unmeasured confounders assumption, this is done via sensitivity analysis.
 
 
-### **Measuring Average Treatment Effect (ATE)**
+### **Estimating Average Treatment Effect (ATE)**
 
 ### **conclusions**
 
